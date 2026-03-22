@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Flow Wallet"
 include(":app")
- 
+include(":platform:network")

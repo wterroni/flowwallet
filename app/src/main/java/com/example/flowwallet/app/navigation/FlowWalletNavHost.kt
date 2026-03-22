@@ -45,8 +45,10 @@ fun FlowWalletNavHost(
                 navArgument(Routes.TransactionIdArg) { type = NavType.StringType },
             ),
         ) {
+            val transactionId = it.arguments?.getString(Routes.TransactionIdArg) ?: ""
             TransactionDetailRoute(
                 onNavigateUp = { navController.navigateUp() },
+                transactionId = transactionId,
             )
         }
 
